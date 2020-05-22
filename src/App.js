@@ -1,26 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import MeasurementApp from "./component/MeasurementApp";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{border:"solid white", width:500, height:300, paddingLeft:120, marginLeft:240, marginTop:100}}>
+        <div className="App">
+        <h1><i>Quantity Measurement App</i></h1><br/>
+        </div>
+        <MeasurementApp/>
+        <br/>
     </div>
   );
 }
-
 export default App;
